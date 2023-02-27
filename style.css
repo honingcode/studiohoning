@@ -1,0 +1,105 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body {
+    background-color: #ffff00;
+    cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' ...") 16 16;
+
+}
+
+.hex {
+    float: left;
+    margin-right: -26px;
+    margin-bottom: -50px;
+    cursor: url("images/") 16 16, pointer;
+    /* width: 200px; */
+}
+.hex .left {
+    float: left;
+    width: 0;
+    border-right: 30px solid rgba(0, 0, 0, 0.3);
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+
+
+.hex .middle {
+    float: left;
+    width: 60px;
+    height: 104px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.hex .right {
+    float: left;
+    width: 0;
+    border-left: 30px solid rgba(0, 0, 0, 0.3);
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+.hex-row {
+    clear: left;
+}
+.hex.even {
+    margin-top: 53px;
+}
+
+.container {
+    margin-top: 215px;
+    margin-left: 100px;
+    height: 100vh;
+    width: 450px;
+}
+
+.black-middle {
+    background-color: black;
+    width: 30px;
+    height: 104px;
+}
+
+.hex .black-left {
+    float: left;
+    width: 0;
+    border-right: 30px solid black;
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+
+.title {
+    position: absolute;
+    left: 260px;
+    top: 335px;
+    font-size: 4rem;
+    font-family: "roc-grotesk", sans-serif;
+    letter-spacing: -3px;
+
+}
+
+.hex:hover .middle {
+    background:  #ffff00;
+}
+
+.hex:hover .left {
+    border-right: 30px solid  #ffff00;
+}
+.hex:hover .right {
+    border-left: 30px solid  #ffff00;
+}
+
+
+@media(max-width: 749px) {
+
+    .container {
+        margin-top: 215px;
+        margin-left: 0;
+        height: 100vh;
+        width: 450px;
+    }
+
+    .title {
+        left: 160px;
+        top: 370px;
+        font-size: 3rem;
+        letter-spacing: -3px;
+        line-height: 1;
+    
+    }
+}
